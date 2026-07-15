@@ -1,0 +1,340 @@
+package service;
+
+import model.Book;
+import model.Order;
+import model.Request;
+import model.enums.BookStatus;
+import model.enums.OrderStatus;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+public class CsvImportExportService {
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
+    private static final String DELIMITER = ",";
+
+    // ===== ЭКСПОРТ =====
+
+    public void exportBooks(List<Book> books, String filePath) throws IOException {
+        ensureDirectoryExists(filePath);
+
+        try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(
+                new FileOutputStream(filePath), StandardCharsets.UTF_8))) {
+
+            writer.println("id,title,author,isbn,status,quantity,price,publicationDate,receivedDate,description,genre,publisher,pages");
+
+            for (Book book : books) {
+                writer.println(String.join(DELIMITER,
+                        String.valueOf(book.getId()),
+                        escapeCsv(book.getTitle()),
+                        escapeCsv(book.getAuthor()),
+                        escapeCsv(book.getIsbn()),
+                        book.getStatus().name(),
+                        String.valueOf(book.getQuantity()),
+                        String.valueOf(book.getPrice()),  // ← Double
+                        book.getPublicationDate() != null ? book.getPublicationDate().format(DATE_FORMATTER) : "",
+                        book.getReceivedDate() != null ? book.getReceivedDate().format(DATE_FORMATTER) : "",
+                        escapeCsv(book.getDescription()),
+                        escapeCsv(book.getGenre()),
+                        escapeCsv(book.getPublisher()),
+                        String.valueOf(book.getPages())
+                ));
+            }
+        }
+    }
+
+    public void exportOrders(List<Order> orders, String filePath) throws IOException {
+        ensureDirectoryExists(filePath);
+
+        try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(
+                new FileOutputStream(filePath), StandardCharsets.UTF_8))) {
+
+            writer.println("id,bookId,customerName,customerPhone,customerEmail,customerAddress,status,orderDate,completionDate,totalPrice,quantity");
+
+            for (Order order : orders) {
+                writer.println(String.join(DELIMITER,
+                        String.valueOf(order.getId()),
+                        String.valueOf(order.getBookId()),
+                        escapeCsv(order.getCustomerName()),
+                        escapeCsv(order.getCustomerPhone()),
+                        escapeCsv(order.getCustomerEmail()),
+                        escapeCsv(order.getCustomerAddress()),
+                        order.getStatus().name(),
+                        order.getOrderDate() != null ? order.getOrderDate().format(DATE_TIME_FORMATTER) : "",
+                        order.getCompletionDate() != null ? order.getCompletionDate().format(DATE_TIME_FORMATTER) : "",
+                        String.valueOf(order.getTotalPrice()),
+                        String.valueOf(order.getQuantity())
+                ));
+            }
+        }
+    }
+
+    public void exportRequests(List<Request> requests, String filePath) throws IOException {
+        ensureDirectoryExists(filePath);
+
+        try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(
+                new FileOutputStream(filePath), StandardCharsets.UTF_8))) {
+
+            writer.println("id,bookId,customerName,customerPhone,requestDate,fulfilled");
+
+            for (Request request : requests) {
+                writer.println(String.join(DELIMITER,
+                        String.valueOf(request.getId()),
+                        String.valueOf(request.getBookId()),
+                        escapeCsv(request.getCustomerName()),
+                        escapeCsv(request.getCustomerPhone()),
+                        request.getRequestDate() != null ? request.getRequestDate().format(DATE_TIME_FORMATTER) : "",
+                        String.valueOf(request.isFulfilled())
+                ));
+            }
+        }
+    }
+
+    // ===== ИМПОРТ =====
+
+    public List<Book> importBooks(String filePath) throws IOException {
+        List<Book> books = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(
+                new FileInputStream(filePath), StandardCharsets.UTF_8))) {
+
+            String line = reader.readLine(); // пропускаем заголовок
+
+            while ((line = reader.readLine()) != null) {
+                String[] parts = parseCsvLine(line);
+                if (parts.length < 13) {
+                    System.err.println("пропущена строка (недостаточно полей): " + line);
+                    continue;
+                }
+
+                try {
+                    int id = Integer.parseInt(parts[0].trim());
+                    String title = parts[1].trim();
+                    String author = parts[2].trim();
+                    String isbn = parts[3].trim();
+                    BookStatus status = BookStatus.valueOf(parts[4].trim());
+                    int quantity = Integer.parseInt(parts[5].trim());
+
+                    double price = Double.parseDouble(parts[6].trim());
+
+                    LocalDate publicationDate = parts[7].isEmpty() ? null : LocalDate.parse(parts[7].trim(), DATE_FORMATTER);
+                    LocalDate receivedDate = parts[8].isEmpty() ? LocalDate.now() : LocalDate.parse(parts[8].trim(), DATE_FORMATTER);
+                    String description = parts[9].trim();
+                    String genre = parts[10].trim();
+                    String publisher = parts[11].trim();
+                    int pages = Integer.parseInt(parts[12].trim());
+
+                    Book book = new Book(
+                            id, title, author, isbn, status, price,
+                            publicationDate, description, genre, publisher, pages
+                    );
+
+                    book.setReceivedDate(receivedDate);
+
+                    // Устанавливаем количество
+                    if (quantity > 1) {
+                        book.addQuantity(quantity - 1);
+                    } else if (quantity == 0 && status == BookStatus.IN_STOCK) {
+                        book.changeStatus(BookStatus.OUT_OF_STOCK);
+                    }
+
+                    books.add(book);
+
+                } catch (NumberFormatException e) {
+                    System.err.println("ошибка парсинга числа в строке: " + line);
+                    System.err.println("  причина: " + e.getMessage());
+                } catch (Exception e) {
+                    System.err.println("ошибка парсинга строки: " + line);
+                    System.err.println("  причина: " + e.getMessage());
+                }
+            }
+        }
+        return books;
+    }
+
+    public List<Order> importOrders(String filePath) throws IOException {
+        List<Order> orders = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(
+                new FileInputStream(filePath), StandardCharsets.UTF_8))) {
+
+            String line = reader.readLine(); // пропускаем заголовок
+
+            while ((line = reader.readLine()) != null) {
+                String[] parts = parseCsvLine(line);
+                if (parts.length < 11) continue;
+
+                try {
+                    int id = Integer.parseInt(parts[0].trim());
+                    int bookId = Integer.parseInt(parts[1].trim());
+                    String customerName = parts[2].trim();
+                    String customerPhone = parts[3].trim();
+                    String customerEmail = parts[4].trim();
+                    String customerAddress = parts[5].trim();
+                    OrderStatus status = OrderStatus.valueOf(parts[6].trim());
+                    LocalDateTime orderDate = LocalDateTime.parse(parts[7].trim(), DATE_TIME_FORMATTER);
+                    LocalDateTime completionDate = parts[8].isEmpty() ? null : LocalDateTime.parse(parts[8].trim(), DATE_TIME_FORMATTER);
+                    double totalPrice = Double.parseDouble(parts[9].trim());
+                    int quantity = Integer.parseInt(parts[10].trim());
+
+                    Order order = new Order(
+                            id, bookId, customerName, customerPhone,
+                            customerEmail, customerAddress, totalPrice
+                    );
+
+                    order.setCompletionDate(completionDate);
+                    if (status != OrderStatus.NEW) {
+                        order.changeStatus(status);
+                    }
+
+                    orders.add(order);
+
+                } catch (Exception e) {
+                    System.err.println("ошибка парсинга строки: " + line);
+                    e.printStackTrace();
+                }
+            }
+        }
+        return orders;
+    }
+
+    public List<Request> importRequests(String filePath) throws IOException {
+        List<Request> requests = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(
+                new FileInputStream(filePath), StandardCharsets.UTF_8))) {
+
+            String line = reader.readLine(); // пропускаем заголовок
+
+            while ((line = reader.readLine()) != null) {
+                String[] parts = parseCsvLine(line);
+                if (parts.length < 6) continue;
+
+                try {
+                    int id = Integer.parseInt(parts[0].trim());
+                    int bookId = Integer.parseInt(parts[1].trim());
+                    String customerName = parts[2].trim();
+                    String customerPhone = parts[3].trim();
+                    LocalDateTime requestDate = parts[4].isEmpty() ? LocalDateTime.now() : LocalDateTime.parse(parts[4].trim(), DATE_TIME_FORMATTER);
+                    boolean fulfilled = Boolean.parseBoolean(parts[5].trim());
+
+                    Request request = new Request(id, bookId, customerName, customerPhone);
+                    request.setRequestDate(requestDate);
+                    request.setFulfilled(fulfilled);
+
+                    requests.add(request);
+
+                } catch (Exception e) {
+                    System.err.println("ошибка парсинга строки: " + line);
+                    e.printStackTrace();
+                }
+            }
+        }
+        return requests;
+    }
+
+
+    private void ensureDirectoryExists(String filePath) throws IOException {
+        File file = new File(filePath);
+        File parentDir = file.getParentFile();
+        if (parentDir != null && !parentDir.exists()) {
+            if (!parentDir.mkdirs()) {
+                throw new IOException("не удалось создать директорию: " + parentDir.getAbsolutePath());
+            }
+        }
+    }
+
+    private String escapeCsv(String value) {
+        if (value == null) return "";
+        if (value.contains(DELIMITER) || value.contains("\"") || value.contains("\n")) {
+            return "\"" + value.replace("\"", "\"\"") + "\"";
+        }
+        return value;
+    }
+
+    private String[] parseCsvLine(String line) {
+        List<String> result = new ArrayList<>();
+        boolean inQuotes = false;
+        StringBuilder field = new StringBuilder();
+
+        for (char c : line.toCharArray()) {
+            if (c == '"') {
+                inQuotes = !inQuotes;
+            } else if (c == ',' && !inQuotes) {
+                result.add(field.toString().trim());
+                field.setLength(0);
+            } else {
+                field.append(c);
+            }
+        }
+        result.add(field.toString().trim());
+        return result.toArray(new String[0]);
+    }
+
+
+    public void mergeBooks(List<Book> importedBooks, Map<Integer, Book> existingBooks) {
+        int updated = 0;
+        int added = 0;
+
+        for (Book imported : importedBooks) {
+            if (existingBooks.containsKey(imported.getId())) {
+                Book existing = existingBooks.get(imported.getId());
+                existing.setTitle(imported.getTitle());
+                existing.setAuthor(imported.getAuthor());
+                existing.setIsbn(imported.getIsbn());
+                existing.setPrice(imported.getPrice());
+                existing.setDescription(imported.getDescription());
+                existing.setGenre(imported.getGenre());
+                existing.setPublisher(imported.getPublisher());
+                existing.setPages(imported.getPages());
+                existing.setReceivedDate(imported.getReceivedDate());
+
+                // Обновляем количество
+                int diff = imported.getQuantity() - existing.getQuantity();
+                if (diff > 0) {
+                    existing.addQuantity(diff);
+                } else if (diff < 0) {
+                    for (int i = 0; i < Math.abs(diff); i++) {
+                        existing.reduceQuantity(1);
+                    }
+                }
+                updated++;
+            } else {
+                existingBooks.put(imported.getId(), imported);
+                added++;
+            }
+        }
+
+        System.out.println("обновлено: " + updated + ", добавлено: " + added);
+    }
+
+    public void mergeOrders(List<Order> importedOrders, Map<Integer, Order> existingOrders) {
+        int updated = 0;
+        int added = 0;
+
+        for (Order imported : importedOrders) {
+            if (existingOrders.containsKey(imported.getId())) {
+                Order existing = existingOrders.get(imported.getId());
+                existing.setCustomerName(imported.getCustomerName());
+                existing.setCustomerPhone(imported.getCustomerPhone());
+                existing.setCustomerEmail(imported.getCustomerEmail());
+                existing.setCustomerAddress(imported.getCustomerAddress());
+                existing.setCompletionDate(imported.getCompletionDate());
+                if (imported.getStatus() != existing.getStatus()) {
+                    existing.changeStatus(imported.getStatus());
+                }
+                updated++;
+            } else {
+                existingOrders.put(imported.getId(), imported);
+                added++;
+            }
+        }
+
+        System.out.println("обновлено: " + updated + ", добавлено: " + added);
+    }
+}
