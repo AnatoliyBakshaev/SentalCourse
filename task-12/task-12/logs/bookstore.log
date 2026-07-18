@@ -1,0 +1,77 @@
+2026-07-18 11:47:38.344 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:47:38.348 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:47:38.348 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:47:38.348 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:47:38.432 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:47:39.544 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:48:09.854 [main] INFO  bookstore.controller.BookStoreController - Начало создания заказа
+2026-07-18 11:48:59.841 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 11:53:37.740 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:37.743 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:37.743 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:37.743 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:53:39.831 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:39.834 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:39.866 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:53:39.866 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:53:39.867 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:53:39.867 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:53:40.235 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:53:40.235 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:53:40.237 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:53:40.238 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:53:40.258 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:53:40.259 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:40.259 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:40.260 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:42.886 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:42.889 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:42.889 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:42.890 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:53:44.326 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:44.327 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:53:44.628 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:53:44.630 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:53:44.630 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:53:44.630 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:53:44.638 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:53:44.638 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:44.639 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:44.639 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:44.893 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 11:53:44.906 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 11:53:59.109 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:59.112 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:59.112 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:59.113 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:54:00.280 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:54:00.281 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:54:00.287 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:54:00.287 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:54:00.289 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:54:00.289 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:54:00.691 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:54:00.692 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:54:00.692 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:54:00.692 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:54:00.702 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:54:00.702 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:54:00.705 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:54:00.705 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:54:14.702 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
