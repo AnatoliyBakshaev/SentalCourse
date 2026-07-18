@@ -1,0 +1,172 @@
+2026-07-18 11:47:38.344 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:47:38.348 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:47:38.348 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:47:38.348 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:47:38.432 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:47:39.544 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:47:39.550 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:47:39.970 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:47:39.979 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:48:09.854 [main] INFO  bookstore.controller.BookStoreController - Начало создания заказа
+2026-07-18 11:48:59.841 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 11:53:37.740 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:37.743 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:37.743 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:37.743 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:53:39.831 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:39.834 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:39.866 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:53:39.866 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:53:39.867 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:53:39.867 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:53:40.235 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:53:40.235 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:53:40.237 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:53:40.238 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:53:40.258 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:53:40.259 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:40.259 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:40.260 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:42.886 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:42.889 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:42.889 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:42.890 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:53:44.326 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:44.327 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:53:44.331 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:53:44.628 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:53:44.630 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:53:44.630 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:53:44.630 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:53:44.638 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:53:44.638 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:44.639 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:44.639 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:53:44.893 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 11:53:44.906 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 11:53:59.109 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:59.112 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:53:59.112 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 11:53:59.113 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 11:54:00.280 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:54:00.281 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 11:54:00.287 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 11:54:00.287 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 11:54:00.289 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 11:54:00.289 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 11:54:00.691 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 11:54:00.692 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 11:54:00.692 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 11:54:00.692 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 11:54:00.702 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 11:54:00.702 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:54:00.705 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 11:54:00.705 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 11:54:14.702 [Thread-0] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 12:32:06.236 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 12:32:06.240 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 12:32:06.241 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 12:32:06.241 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 12:32:06.275 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 12:32:06.347 [main] INFO  org.hibernate.jpa.boot.internal.PersistenceXmlParser - HHH000318: Could not find any META-INF/persistence.xml file in the classpath
+2026-07-18 12:32:06.348 [main] ERROR bookstore.utils.JpaUtil - Ошибка создания EntityManagerFactory
+jakarta.persistence.PersistenceException: No Persistence provider for EntityManager named bookstorePU
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:86) ~[jakarta.persistence-api-3.1.0.jar:3.1.0]
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55) ~[jakarta.persistence-api-3.1.0.jar:3.1.0]
+	at bookstore.utils.JpaUtil.<clinit>(JpaUtil.java:15) [classes/:?]
+	at bookstore.dao.impl.BookDAOJpaImpl.getAll(BookDAOJpaImpl.java:31) [classes/:?]
+	at bookstore.service.BookStoreService.loadCache(BookStoreService.java:80) [classes/:?]
+	at bookstore.service.BookStoreService.<init>(BookStoreService.java:60) [classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) [?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) [?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) [?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) [?:?]
+	at bookstore.annotation.di.DIContainer.createInstances(DIContainer.java:96) [classes/:?]
+	at bookstore.annotation.di.DIContainer.scan(DIContainer.java:36) [classes/:?]
+	at bookstore.app.BookStoreApplication.main(BookStoreApplication.java:30) [classes/:?]
+2026-07-18 12:32:06.378 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 12:32:06.388 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 12:32:06.389 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 12:32:06.389 [main] WARN  bookstore.app.BookStoreApplication - Сервис не найден в DI, создаем вручную
+2026-07-18 12:32:06.389 [main] DEBUG bookstore.app.BookStoreApplication - Создание начального списка книг
+2026-07-18 12:32:06.399 [main] DEBUG bookstore.app.BookStoreApplication - Создано 5 начальных книг
+2026-07-18 12:32:49.231 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 12:32:49.234 [main] INFO  bookstore.app.BookStoreApplication - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 12:32:49.234 [main] INFO  bookstore.app.BookStoreApplication - ============================================
+2026-07-18 12:32:49.235 [main] INFO  bookstore.app.BookStoreApplication - Инициализация DI контейнера
+2026-07-18 12:32:49.260 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 12:32:49.463 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: bookstorePU]
+2026-07-18 12:32:49.572 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.0.Final
+2026-07-18 12:32:49.622 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-18 12:32:49.964 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-07-18 12:32:49.969 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-07-18 12:32:49.969 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+2026-07-18 12:32:49.970 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-07-18 12:32:49.970 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-07-18 12:32:49.973 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 10 (min=1)
+2026-07-18 12:32:50.538 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-18 12:32:52.370 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18 12:32:52.392 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@446b64b3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-07-18 12:32:53.027 [main] INFO  bookstore.utils.JpaUtil - EntityManagerFactory успешно создан
+2026-07-18 12:32:53.891 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан через DI
+2026-07-18 12:32:53.899 [main] INFO  bookstore.app.BookStoreApplication - DI контейнер инициализирован
+2026-07-18 12:32:53.899 [main] INFO  bookstore.app.BookStoreApplication - Получение сервиса из DI контейнера
+2026-07-18 12:32:53.899 [main] INFO  bookstore.app.BookStoreApplication - Сервис получен из DI контейнера
+2026-07-18 12:32:53.899 [main] INFO  bookstore.app.BookStoreApplication - Загрузка состояния
+2026-07-18 12:32:53.922 [main] INFO  bookstore.app.BookStoreApplication - Shutdown hook зарегистрирован
+2026-07-18 12:32:53.923 [main] INFO  bookstore.app.BookStoreApplication - Получение контроллера из DI контейнера
+2026-07-18 12:32:53.923 [main] INFO  bookstore.app.BookStoreApplication - Контроллер получен из DI контейнера
+2026-07-18 12:32:53.923 [main] INFO  bookstore.app.BookStoreApplication - Создание и запуск меню
+2026-07-18 12:32:53.936 [main] INFO  bookstore.controller.MenuController - MenuController инициализирован
+2026-07-18 12:32:53.936 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 12:32:53.936 [main] INFO  bookstore.controller.MenuController - ЗАПУСК ПРИЛОЖЕНИЯ: Электронный книжный магазин
+2026-07-18 12:32:53.936 [main] INFO  bookstore.controller.MenuController - ============================================
+2026-07-18 12:33:18.897 [main] INFO  bookstore.controller.BookStoreController - Начало просмотра списка заказов
+2026-07-18 12:33:21.677 [main] INFO  bookstore.controller.BookStoreController - Показано 7 заказов
+2026-07-18 12:33:48.830 [main] INFO  bookstore.controller.BookStoreController - Начало создания заказа
+2026-07-18 12:34:41.878 [main] INFO  bookstore.controller.BookStoreController - Заказ успешно создан для книги ID: 1, клиент: Фофо ват
+2026-07-18 12:35:08.207 [main] INFO  bookstore.controller.BookStoreController - Начало просмотра списка заказов
+2026-07-18 12:35:10.774 [main] INFO  bookstore.controller.BookStoreController - Показано 8 заказов
+2026-07-18 12:37:27.367 [Thread-1] INFO  bookstore.app.BookStoreApplication - Сохранение состояния перед выходом...
+2026-07-18 13:17:08.230 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан Spring-контейнером
+2026-07-18 13:17:08.416 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: bookstorePU]
+2026-07-18 13:17:08.506 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.0.Final
+2026-07-18 13:17:08.554 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-18 13:17:08.851 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-07-18 13:17:08.855 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-07-18 13:17:08.855 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+2026-07-18 13:17:08.856 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-07-18 13:17:08.856 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-07-18 13:17:08.859 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 10 (min=1)
+2026-07-18 13:17:09.303 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-18 13:17:10.641 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18 13:17:10.668 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@45c423b3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-07-18 13:17:10.747 [main] INFO  bookstore.utils.JpaUtil - EntityManagerFactory успешно создан
+2026-07-18 13:17:11.807 [main] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'menuController' defined in file [C:\Users\Anatoliy\IdeaProjects\SentalCourse\task-14\task-14\target\classes\bookstore\controller\MenuController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'bookstore.view.interfaces.IBuilder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-07-18 13:20:21.070 [main] INFO  bookstore.controller.BookStoreController - BookStoreController создан Spring-контейнером
+2026-07-18 13:20:21.229 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: bookstorePU]
+2026-07-18 13:20:21.306 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.0.Final
+2026-07-18 13:20:21.371 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-18 13:20:21.659 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using built-in connection pool (not intended for production use)
+2026-07-18 13:20:21.663 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2026-07-18 13:20:21.663 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/postgres]
+2026-07-18 13:20:21.663 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=postgres}
+2026-07-18 13:20:21.664 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2026-07-18 13:20:21.666 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001115: Connection pool size: 10 (min=1)
+2026-07-18 13:20:22.235 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-18 13:20:23.617 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-18 13:20:23.654 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@16cf7fd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2026-07-18 13:20:23.712 [main] INFO  bookstore.utils.JpaUtil - EntityManagerFactory успешно создан
