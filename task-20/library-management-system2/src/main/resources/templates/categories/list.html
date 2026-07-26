@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Категории</title>
+</head>
+<body>
+<h1>📂 Категории</h1>
+
+<div th:if="${isAdmin}">
+    <a th:href="@{/categories/add}">➕ Добавить категорию</a>
+</div>
+
+<hr>
+
+<div th:if="${#lists.isEmpty(rootCategories)}">
+    <p>Категорий не найдено</p>
+</div>
+
+<ul th:if="${!#lists.isEmpty(rootCategories)}">
+    <li th:each="cat : ${rootCategories}">
+        <strong th:text="${cat.name}"></strong>
+        <a th:href="@{/categories/{id}(id=${cat.id})}">📖 Открыть</a>
+        <a th:if="${isAdmin}" th:href="@{/categories/edit/{id}(id=${cat.id})}">✏️</a>
+        <a th:if="${isAdmin}" th:href="@{/categories/delete/{id}(id=${cat.id})}" onclick="return confirm('Удалить?')">🗑️</a>
+
+        <!-- ПОДКАТЕГОРИИ (1-й уровень) -->
+        <ul th:if="${!cat.children.isEmpty()}">
+            <li th:each="child : ${cat.children}">
+                <span th:text="${child.name}"></span>
+                <a th:href="@{/categories/{id}(id=${child.id})}">📖 Открыть</a>
+                <a th:if="${isAdmin}" th:href="@{/categories/edit/{id}(id=${child.id})}">✏️</a>
+                <a th:if="${isAdmin}" th:href="@{/categories/delete/{id}(id=${child.id})}" onclick="return confirm('Удалить?')">🗑️</a>
+
+                <!-- ПОДКАТЕГОРИИ (2-й уровень) -->
+                <ul th:if="${!child.children.isEmpty()}">
+                    <li th:each="grandchild : ${child.children}">
+                        <span th:text="${grandchild.name}"></span>
+                        <a th:href="@{/categories/{id}(id=${grandchild.id})}">📖 Открыть</a>
+                        <a th:if="${isAdmin}" th:href="@{/categories/edit/{id}(id=${grandchild.id})}">✏️</a>
+                        <a th:if="${isAdmin}" th:href="@{/categories/delete/{id}(id=${grandchild.id})}" onclick="return confirm('Удалить?')">🗑️</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<p><a th:href="@{/dashboard}">← На главную</a></p>
+</body>
+</html>

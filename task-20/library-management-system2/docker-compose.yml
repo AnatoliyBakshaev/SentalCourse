@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: library_app
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      # ПОДКЛЮЧАЕМСЯ К БД НА ХОСТ-МАШИНЕ (НЕ В КОНТЕЙНЕРЕ!)
+      SPRING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/library_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: anatoliy
+      SPRING_JPA_HIBERNATE_DDL_AUTO: validate   # НЕ СОЗДАЁМ ТАБЛИЦЫ!
+      SPRING_JPA_SHOW_SQL: "true"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

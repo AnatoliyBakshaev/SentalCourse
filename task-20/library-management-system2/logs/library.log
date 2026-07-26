@@ -1,0 +1,763 @@
+2026-07-26 13:50:41 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - Starting LibraryManagementSystem2Application using Java 17.0.8.1 with PID 5896 (C:\Users\Anatoliy\IdeaProjects\library-management-system2\target\classes started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 13:50:41 DEBUG [restartedMain] c.l.l.LibraryManagementSystem2Application - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 13:50:41 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 13:50:41 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-26 13:50:41 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-26 13:50:42 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 13:50:42 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2026-07-26 13:50:43 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-26 13:50:43 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-26 13:50:43 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-07-26 13:50:43 INFO  [restartedMain] o.a.c.c.C.[.[localhost].[/library] - Initializing Spring embedded WebApplicationContext
+2026-07-26 13:50:43 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1744 ms
+2026-07-26 13:50:43 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 13:50:43 INFO  [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 13:50:43 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 13:50:44 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 13:50:44 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 13:50:44 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ac62696
+2026-07-26 13:50:44 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 13:50:44 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 13:50:45 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 13:50:46 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 13:50:46 INFO  [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 13:50:46 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 13:50:47 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 13:50:47 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-26 13:50:47 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/library'
+2026-07-26 13:50:47 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - Started LibraryManagementSystem2Application in 6.266 seconds (process running for 13.835)
+2026-07-26 13:50:52 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/library] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-26 13:50:52 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-26 13:50:52 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-07-26 13:50:52 WARN  [http-nio-8080-exec-1] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 13:50:52 DEBUG [http-nio-8080-exec-2] c.l.l.controller.AuthController - Открыта страница входа
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.controller.AuthController - Попытка входа: username=admin
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.service.UserServiceImpl - Попытка аутентификации пользователя: admin
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.service.UserServiceImpl - Пользователь успешно аутентифицирован: ID=1, username=admin, roles=[Role(id=2, name=ADMIN)]
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.controller.AuthController - Пользователь admin успешно вошёл в систему
+2026-07-26 13:51:01 DEBUG [http-nio-8080-exec-4] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя admin: true
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-4] c.l.l.controller.AuthController - Пользователь admin открыл дашборд, isAdmin=true
+2026-07-26 13:51:04 INFO  [http-nio-8080-exec-5] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 13:51:04 INFO  [http-nio-8080-exec-5] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 13:51:04 INFO  [http-nio-8080-exec-5] c.l.l.controller.BookController - Загружено 3 книг
+2026-07-26 13:51:04 DEBUG [http-nio-8080-exec-5] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя admin: true
+2026-07-26 14:23:31 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m10s342ms628µs400ns).
+2026-07-26 14:24:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 14:24:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 14:24:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-26 15:28:12 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Starting LibraryManagementSystem2ApplicationTests using Java 17.0.8.1 with PID 8068 (started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 15:28:12 DEBUG [main] c.l.l.LibraryManagementSystem2ApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 15:28:12 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 15:28:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 15:28:14 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 5 JPA repository interfaces.
+2026-07-26 15:28:15 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 15:28:15 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 15:28:15 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 15:28:15 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 15:28:15 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 15:28:16 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c930fc3
+2026-07-26 15:28:16 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 15:28:16 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 15:28:18 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 15:28:18 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:28:19 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 15:28:20 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 15:28:20 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 15:28:21 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Started LibraryManagementSystem2ApplicationTests in 9.127 seconds (process running for 13.975)
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Пользователь admin открывает форму добавления книги
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Загружено 1 книг
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=999
+2026-07-26 15:28:22 ERROR [main] c.l.l.controller.BookController - Ошибка при просмотре книги ID=999: Книга не найдена
+java.lang.RuntimeException: Книга не найдена
+	at com.library.library_management_system.controller.BookController.lambda$viewBook$0(BookController.java:124)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.library_management_system.controller.BookController.viewBook(BookController.java:124)
+	at com.library.library_management_system.controller.BookControllerTest.viewBook_ShouldRedirectToBooks_WhenBookNotFound(BookControllerTest.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2026-07-26 15:28:22 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books/add, user=admin
+2026-07-26 15:28:22 WARN  [main] c.l.l.controller.BookController - Пользователь admin удаляет книгу ID=1
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Книга ID=1 успешно удалена
+2026-07-26 15:28:22 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=Test
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Найдено 1 книг по запросу 'Test'
+2026-07-26 15:28:22 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=1
+2026-07-26 15:28:22 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 999
+2026-07-26 15:28:22 WARN  [main] c.l.l.service.BookServiceImpl - Удаление книги: ID=1
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Книга удалена: ID=1
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка доступных книг
+2026-07-26 15:28:22 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 1
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Создание новой книги: New Book
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Книга создана: ID=1, title=Test Book, copies=5
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Поиск книг по ключевому слову: Test
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Обновление книги ID=1: Updated Title
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Обновлено количество копий: 10, доступно: 10
+2026-07-26 15:28:22 INFO  [main] c.l.l.service.BookServiceImpl - Книга обновлена: ID=1, title=Updated Title
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно арендована: rentalId=1, userId=1, bookId=1, dueDate=2026-08-09
+2026-07-26 15:28:23 DEBUG [main] c.l.l.service.RentalServiceImpl - Запрос активных аренд пользователя: userId=1
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:28:23 WARN  [main] c.l.l.service.RentalServiceImpl - Книга недоступна для аренды: ID=1, availableCopies=0
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:28:23 WARN  [main] c.l.l.service.RentalServiceImpl - Книга уже возвращена: rentalId=1
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно возвращена: rentalId=1, bookId=1, returnDate=2026-07-26
+2026-07-26 15:28:23 INFO  [main] c.l.l.service.RentalServiceImpl - Запрос просроченных аренд
+2026-07-26 15:28:23 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:28:23 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 15:28:23 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-26 15:29:16 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Starting LibraryManagementSystem2ApplicationTests using Java 17.0.8.1 with PID 13928 (started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 15:29:16 DEBUG [main] c.l.l.LibraryManagementSystem2ApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 15:29:16 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 15:29:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 15:29:17 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+2026-07-26 15:29:18 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 15:29:19 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 15:29:19 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 15:29:19 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 15:29:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 15:29:19 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2aac6fa7
+2026-07-26 15:29:19 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 15:29:19 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 15:29:21 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 15:29:21 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:29:22 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 15:29:24 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 15:29:24 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 15:29:24 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Started LibraryManagementSystem2ApplicationTests in 9.045 seconds (process running for 13.242)
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Пользователь admin открывает форму добавления книги
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Загружено 1 книг
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=999
+2026-07-26 15:29:25 ERROR [main] c.l.l.controller.BookController - Ошибка при просмотре книги ID=999: Книга не найдена
+java.lang.RuntimeException: Книга не найдена
+	at com.library.library_management_system.controller.BookController.lambda$viewBook$0(BookController.java:124)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.library_management_system.controller.BookController.viewBook(BookController.java:124)
+	at com.library.library_management_system.controller.BookControllerTest.viewBook_ShouldRedirectToBooks_WhenBookNotFound(BookControllerTest.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2026-07-26 15:29:25 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books/add, user=admin
+2026-07-26 15:29:25 WARN  [main] c.l.l.controller.BookController - Пользователь admin удаляет книгу ID=1
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Книга ID=1 успешно удалена
+2026-07-26 15:29:25 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=Test
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Найдено 1 книг по запросу 'Test'
+2026-07-26 15:29:25 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=1
+2026-07-26 15:29:26 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 999
+2026-07-26 15:29:26 WARN  [main] c.l.l.service.BookServiceImpl - Удаление книги: ID=1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Книга удалена: ID=1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка доступных книг
+2026-07-26 15:29:26 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Создание новой книги: New Book
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Книга создана: ID=1, title=Test Book, copies=5
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Поиск книг по ключевому слову: Test
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Обновление книги ID=1: Updated Title
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Обновлено количество копий: 10, доступно: 10
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.BookServiceImpl - Книга обновлена: ID=1, title=Updated Title
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно арендована: rentalId=1, userId=1, bookId=1, dueDate=2026-08-09
+2026-07-26 15:29:26 DEBUG [main] c.l.l.service.RentalServiceImpl - Запрос активных аренд пользователя: userId=1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:29:26 WARN  [main] c.l.l.service.RentalServiceImpl - Книга недоступна для аренды: ID=1, availableCopies=0
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:29:26 WARN  [main] c.l.l.service.RentalServiceImpl - Книга уже возвращена: rentalId=1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно возвращена: rentalId=1, bookId=1, returnDate=2026-07-26
+2026-07-26 15:29:26 INFO  [main] c.l.l.service.RentalServiceImpl - Запрос просроченных аренд
+2026-07-26 15:29:26 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:29:26 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 15:29:26 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-26 15:40:10 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Starting LibraryManagementSystem2ApplicationTests using Java 17.0.8.1 with PID 8820 (started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 15:40:10 DEBUG [main] c.l.l.LibraryManagementSystem2ApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 15:40:10 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 15:40:11 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 15:40:11 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 223 ms. Found 5 JPA repository interfaces.
+2026-07-26 15:40:13 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 15:40:13 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 15:40:13 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 15:40:13 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 15:40:13 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 15:40:13 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ca4f762
+2026-07-26 15:40:13 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 15:40:13 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 15:40:15 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 15:40:16 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:40:16 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 15:40:18 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 15:40:18 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 15:40:20 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Started LibraryManagementSystem2ApplicationTests in 11.31 seconds (process running for 15.344)
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Пользователь admin открывает форму добавления книги
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Загружено 1 книг
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=999
+2026-07-26 15:40:21 ERROR [main] c.l.l.controller.BookController - Ошибка при просмотре книги ID=999: Книга не найдена
+java.lang.RuntimeException: Книга не найдена
+	at com.library.library_management_system.controller.BookController.lambda$viewBook$0(BookController.java:124)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.library_management_system.controller.BookController.viewBook(BookController.java:124)
+	at com.library.library_management_system.controller.BookControllerTest.viewBook_ShouldRedirectToBooks_WhenBookNotFound(BookControllerTest.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2026-07-26 15:40:21 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books/add, user=admin
+2026-07-26 15:40:21 WARN  [main] c.l.l.controller.BookController - Пользователь admin удаляет книгу ID=1
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Книга ID=1 успешно удалена
+2026-07-26 15:40:21 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=Test
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Найдено 1 книг по запросу 'Test'
+2026-07-26 15:40:21 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=1
+2026-07-26 15:40:22 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 999
+2026-07-26 15:40:22 WARN  [main] c.l.l.service.BookServiceImpl - Удаление книги: ID=1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Книга удалена: ID=1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка доступных книг
+2026-07-26 15:40:22 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Создание новой книги: New Book
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Книга создана: ID=1, title=Test Book, copies=5
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Поиск книг по ключевому слову: Test
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Обновление книги ID=1: Updated Title
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Обновлено количество копий: 10, доступно: 10
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.BookServiceImpl - Книга обновлена: ID=1, title=Updated Title
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно арендована: rentalId=1, userId=1, bookId=1, dueDate=2026-08-09
+2026-07-26 15:40:22 DEBUG [main] c.l.l.service.RentalServiceImpl - Запрос активных аренд пользователя: userId=1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:40:22 WARN  [main] c.l.l.service.RentalServiceImpl - Книга недоступна для аренды: ID=1, availableCopies=0
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:40:22 WARN  [main] c.l.l.service.RentalServiceImpl - Книга уже возвращена: rentalId=1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно возвращена: rentalId=1, bookId=1, returnDate=2026-07-26
+2026-07-26 15:40:22 INFO  [main] c.l.l.service.RentalServiceImpl - Запрос просроченных аренд
+2026-07-26 15:40:22 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:40:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 15:40:22 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-26 15:52:27 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Starting LibraryManagementSystem2ApplicationTests using Java 17.0.8.1 with PID 4796 (started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 15:52:27 DEBUG [main] c.l.l.LibraryManagementSystem2ApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 15:52:27 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 15:52:30 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 15:52:30 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 5 JPA repository interfaces.
+2026-07-26 15:52:31 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 15:52:31 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 15:52:31 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 15:52:31 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 15:52:31 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 15:52:32 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cd7dc74
+2026-07-26 15:52:32 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 15:52:32 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 15:52:34 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 15:52:34 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:52:35 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 15:52:37 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 15:52:37 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 15:52:38 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Started LibraryManagementSystem2ApplicationTests in 11.613 seconds (process running for 16.383)
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Пользователь admin открывает форму добавления книги
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Загружено 1 книг
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=999
+2026-07-26 15:52:39 ERROR [main] c.l.l.controller.BookController - Ошибка при просмотре книги ID=999: Книга не найдена
+java.lang.RuntimeException: Книга не найдена
+	at com.library.library_management_system.controller.BookController.lambda$viewBook$0(BookController.java:124)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.library_management_system.controller.BookController.viewBook(BookController.java:124)
+	at com.library.library_management_system.controller.BookControllerTest.viewBook_ShouldRedirectToBooks_WhenBookNotFound(BookControllerTest.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2026-07-26 15:52:39 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books/add, user=admin
+2026-07-26 15:52:39 WARN  [main] c.l.l.controller.BookController - Пользователь admin удаляет книгу ID=1
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Книга ID=1 успешно удалена
+2026-07-26 15:52:39 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=Test
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Найдено 1 книг по запросу 'Test'
+2026-07-26 15:52:39 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=1
+2026-07-26 15:52:39 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 999
+2026-07-26 15:52:39 WARN  [main] c.l.l.service.BookServiceImpl - Удаление книги: ID=1
+2026-07-26 15:52:39 INFO  [main] c.l.l.service.BookServiceImpl - Книга удалена: ID=1
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка доступных книг
+2026-07-26 15:52:40 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 1
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Создание новой книги: New Book
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Книга создана: ID=1, title=Test Book, copies=5
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Поиск книг по ключевому слову: Test
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Обновление книги ID=1: Updated Title
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Обновлено количество копий: 10, доступно: 10
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.BookServiceImpl - Книга обновлена: ID=1, title=Updated Title
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно арендована: rentalId=1, userId=1, bookId=1, dueDate=2026-08-09
+2026-07-26 15:52:40 DEBUG [main] c.l.l.service.RentalServiceImpl - Запрос активных аренд пользователя: userId=1
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:52:40 WARN  [main] c.l.l.service.RentalServiceImpl - Книга недоступна для аренды: ID=1, availableCopies=0
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:52:40 WARN  [main] c.l.l.service.RentalServiceImpl - Книга уже возвращена: rentalId=1
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно возвращена: rentalId=1, bookId=1, returnDate=2026-07-26
+2026-07-26 15:52:40 INFO  [main] c.l.l.service.RentalServiceImpl - Запрос просроченных аренд
+2026-07-26 15:52:40 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:52:40 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 15:52:40 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-26 15:53:09 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Starting LibraryManagementSystem2ApplicationTests using Java 17.0.8.1 with PID 13752 (started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 15:53:09 DEBUG [main] c.l.l.LibraryManagementSystem2ApplicationTests - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 15:53:09 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 15:53:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 15:53:10 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 5 JPA repository interfaces.
+2026-07-26 15:53:11 INFO  [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 15:53:11 INFO  [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 15:53:12 INFO  [main] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 15:53:12 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 15:53:12 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 15:53:12 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@341964d0
+2026-07-26 15:53:12 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 15:53:12 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 15:53:14 INFO  [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 15:53:14 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:53:15 INFO  [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 15:53:17 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 15:53:17 INFO  [main] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 15:53:18 INFO  [main] c.l.l.LibraryManagementSystem2ApplicationTests - Started LibraryManagementSystem2ApplicationTests in 9.776 seconds (process running for 14.355)
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Пользователь admin открывает форму добавления книги
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Загружено 1 книг
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=999
+2026-07-26 15:53:19 ERROR [main] c.l.l.controller.BookController - Ошибка при просмотре книги ID=999: Книга не найдена
+java.lang.RuntimeException: Книга не найдена
+	at com.library.library_management_system.controller.BookController.lambda$viewBook$0(BookController.java:124)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.library.library_management_system.controller.BookController.viewBook(BookController.java:124)
+	at com.library.library_management_system.controller.BookControllerTest.viewBook_ShouldRedirectToBooks_WhenBookNotFound(BookControllerTest.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:66)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2026-07-26 15:53:19 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books/add, user=admin
+2026-07-26 15:53:19 WARN  [main] c.l.l.controller.BookController - Пользователь admin удаляет книгу ID=1
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Книга ID=1 успешно удалена
+2026-07-26 15:53:19 WARN  [main] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=Test
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Найдено 1 книг по запросу 'Test'
+2026-07-26 15:53:19 INFO  [main] c.l.l.controller.BookController - Пользователь admin просматривает книгу ID=1
+2026-07-26 15:53:19 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 999
+2026-07-26 15:53:19 WARN  [main] c.l.l.service.BookServiceImpl - Удаление книги: ID=1
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Книга удалена: ID=1
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка доступных книг
+2026-07-26 15:53:19 DEBUG [main] c.l.l.service.BookServiceImpl - Поиск книги по ID: 1
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Создание новой книги: New Book
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Книга создана: ID=1, title=Test Book, copies=5
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Поиск книг по ключевому слову: Test
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Обновление книги ID=1: Updated Title
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Обновлено количество копий: 10, доступно: 10
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.BookServiceImpl - Книга обновлена: ID=1, title=Updated Title
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно арендована: rentalId=1, userId=1, bookId=1, dueDate=2026-08-09
+2026-07-26 15:53:19 DEBUG [main] c.l.l.service.RentalServiceImpl - Запрос активных аренд пользователя: userId=1
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=1, bookId=1
+2026-07-26 15:53:19 WARN  [main] c.l.l.service.RentalServiceImpl - Книга недоступна для аренды: ID=1, availableCopies=0
+2026-07-26 15:53:19 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:53:19 WARN  [main] c.l.l.service.RentalServiceImpl - Книга уже возвращена: rentalId=1
+2026-07-26 15:53:20 INFO  [main] c.l.l.service.RentalServiceImpl - Попытка возврата книги: rentalId=1
+2026-07-26 15:53:20 INFO  [main] c.l.l.service.RentalServiceImpl - Книга успешно возвращена: rentalId=1, bookId=1, returnDate=2026-07-26
+2026-07-26 15:53:20 INFO  [main] c.l.l.service.RentalServiceImpl - Запрос просроченных аренд
+2026-07-26 15:53:20 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:53:20 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 15:53:20 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-26 15:59:29 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - Starting LibraryManagementSystem2Application using Java 17.0.8.1 with PID 4892 (C:\Users\Anatoliy\IdeaProjects\library-management-system2\target\classes started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 15:59:29 DEBUG [restartedMain] c.l.l.LibraryManagementSystem2Application - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 15:59:29 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 15:59:29 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-26 15:59:29 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-26 15:59:30 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 15:59:31 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
+2026-07-26 15:59:31 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-26 15:59:31 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-26 15:59:31 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-07-26 15:59:31 INFO  [restartedMain] o.a.c.c.C.[.[localhost].[/library] - Initializing Spring embedded WebApplicationContext
+2026-07-26 15:59:31 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2068 ms
+2026-07-26 15:59:32 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 15:59:32 INFO  [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 15:59:32 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 15:59:32 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 15:59:32 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 15:59:32 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4e09ab2b
+2026-07-26 15:59:32 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 15:59:32 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 15:59:34 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 15:59:34 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 15:59:35 INFO  [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 15:59:35 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 15:59:35 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 15:59:36 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-26 15:59:36 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/library'
+2026-07-26 15:59:36 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - Started LibraryManagementSystem2Application in 7.33 seconds (process running for 8.473)
+2026-07-26 15:59:42 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/library] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-26 15:59:42 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-26 15:59:42 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-26 15:59:43 WARN  [http-nio-8080-exec-2] c.l.l.controller.AuthController - Неавторизованный доступ к /dashboard
+2026-07-26 15:59:43 DEBUG [http-nio-8080-exec-1] c.l.l.controller.AuthController - Открыта страница входа
+2026-07-26 15:59:58 INFO  [http-nio-8080-exec-3] c.l.l.controller.AuthController - Попытка входа: username=Nina334
+2026-07-26 15:59:58 INFO  [http-nio-8080-exec-3] c.l.l.service.UserServiceImpl - Попытка аутентификации пользователя: Nina334
+2026-07-26 15:59:58 WARN  [http-nio-8080-exec-3] c.l.l.service.UserServiceImpl - Аутентификация отклонена. Пользователь не найден: Nina334
+2026-07-26 15:59:58 WARN  [http-nio-8080-exec-3] c.l.l.controller.AuthController - Неудачная попытка входа: username=Nina334
+2026-07-26 16:00:06 INFO  [http-nio-8080-exec-4] c.l.l.controller.AuthController - Попытка входа: username=ivan
+2026-07-26 16:00:06 INFO  [http-nio-8080-exec-4] c.l.l.service.UserServiceImpl - Попытка аутентификации пользователя: ivan
+2026-07-26 16:00:06 INFO  [http-nio-8080-exec-4] c.l.l.service.UserServiceImpl - Пользователь успешно аутентифицирован: ID=3, username=ivan, roles=[Role(id=1, name=USER)]
+2026-07-26 16:00:06 INFO  [http-nio-8080-exec-4] c.l.l.controller.AuthController - Пользователь ivan успешно вошёл в систему
+2026-07-26 16:00:06 DEBUG [http-nio-8080-exec-5] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя ivan: false
+2026-07-26 16:00:06 INFO  [http-nio-8080-exec-5] c.l.l.controller.AuthController - Пользователь ivan открыл дашборд, isAdmin=false
+2026-07-26 16:00:11 DEBUG [http-nio-8080-exec-6] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя ivan: false
+2026-07-26 16:00:13 DEBUG [http-nio-8080-exec-7] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя ivan: false
+2026-07-26 16:00:13 INFO  [http-nio-8080-exec-7] c.l.l.controller.AuthController - Пользователь ivan открыл дашборд, isAdmin=false
+2026-07-26 16:00:14 INFO  [http-nio-8080-exec-8] c.l.l.controller.BookController - Пользователь ivan просматривает список книг, search=null
+2026-07-26 16:00:14 INFO  [http-nio-8080-exec-8] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 16:00:14 INFO  [http-nio-8080-exec-8] c.l.l.controller.BookController - Загружено 3 книг
+2026-07-26 16:00:14 DEBUG [http-nio-8080-exec-8] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя ivan: false
+2026-07-26 16:00:17 DEBUG [http-nio-8080-exec-9] c.l.l.service.BookServiceImpl - Поиск книги по ID: 2
+2026-07-26 16:00:20 INFO  [http-nio-8080-exec-10] c.l.l.service.RentalServiceImpl - Попытка аренды книги: userId=3, bookId=2
+2026-07-26 16:00:20 INFO  [http-nio-8080-exec-10] c.l.l.service.RentalServiceImpl - Книга успешно арендована: rentalId=2, userId=3, bookId=2, dueDate=2026-08-09
+2026-07-26 16:00:20 DEBUG [http-nio-8080-exec-2] c.l.l.service.RentalServiceImpl - Запрос активных аренд пользователя: userId=3
+2026-07-26 16:00:20 DEBUG [http-nio-8080-exec-2] c.l.l.service.RentalServiceImpl - Запрос истории аренд пользователя: userId=3
+2026-07-26 16:00:20 DEBUG [http-nio-8080-exec-2] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя ivan: false
+2026-07-26 16:00:37 DEBUG [http-nio-8080-exec-1] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя ivan: false
+2026-07-26 16:00:37 INFO  [http-nio-8080-exec-1] c.l.l.controller.AuthController - Пользователь ivan открыл дашборд, isAdmin=false
+2026-07-26 16:00:48 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 16:00:48 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 16:00:48 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
