@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Детали книги</title>
+</head>
+<body>
+<h1>Детали книги</h1>
+
+<div style="border: 1px solid #ccc; padding: 20px;">
+    <h2 th:text="${book.title}"></h2>
+    <p><strong>Автор:</strong> <span th:text="${book.author}"></span></p>
+    <p><strong>ISBN:</strong> <span th:text="${book.isbn}"></span></p>
+    <p><strong>Издательство:</strong> <span th:text="${book.publisher}"></span></p>
+    <p><strong>Год издания:</strong> <span th:text="${book.publicationYear}"></span></p>
+    <p><strong>Описание:</strong> <span th:text="${book.description}"></span></p>
+    <p><strong>Всего копий:</strong> <span th:text="${book.totalCopies}"></span></p>
+    <p><strong>Доступно:</strong> <span th:text="${book.availableCopies}"></span></p>
+    <p><strong>Категории:</strong>
+        <span th:each="cat : ${book.categories}" th:text="${cat.name} + ' '"></span>
+    </p>
+</div>
+
+<div style="margin-top: 20px;">
+    <a th:if="${book.availableCopies > 0}" th:href="@{/rentals/rent/{id}(id=${book.id})}">Взять книгу</a>
+    <a th:if="${isAdmin}" th:href="@{/books/edit/{id}(id=${book.id})}">Редактировать</a>
+    <a th:if="${isAdmin}" th:href="@{/books/delete/{id}(id=${book.id})}" onclick="return confirm('Удалить?')">Удалить</a>
+    <a th:href="@{/books}">Назад к списку</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+2026-07-26 13:50:41 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - Starting LibraryManagementSystem2Application using Java 17.0.8.1 with PID 5896 (C:\Users\Anatoliy\IdeaProjects\library-management-system2\target\classes started by Anatoliy in C:\Users\Anatoliy\IdeaProjects\library-management-system2)
+2026-07-26 13:50:41 DEBUG [restartedMain] c.l.l.LibraryManagementSystem2Application - Running with Spring Boot v3.2.4, Spring v6.1.5
+2026-07-26 13:50:41 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - No active profile set, falling back to 1 default profile: "default"
+2026-07-26 13:50:41 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-26 13:50:41 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-26 13:50:42 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-26 13:50:42 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2026-07-26 13:50:43 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-26 13:50:43 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-26 13:50:43 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-07-26 13:50:43 INFO  [restartedMain] o.a.c.c.C.[.[localhost].[/library] - Initializing Spring embedded WebApplicationContext
+2026-07-26 13:50:43 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1744 ms
+2026-07-26 13:50:43 INFO  [restartedMain] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-26 13:50:43 INFO  [restartedMain] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-07-26 13:50:43 INFO  [restartedMain] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-26 13:50:44 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-26 13:50:44 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-26 13:50:44 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ac62696
+2026-07-26 13:50:44 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-26 13:50:44 WARN  [restartedMain] org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-26 13:50:45 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-26 13:50:46 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 13:50:46 INFO  [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-26 13:50:46 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-26 13:50:47 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-07-26 13:50:47 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-07-26 13:50:47 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/library'
+2026-07-26 13:50:47 INFO  [restartedMain] c.l.l.LibraryManagementSystem2Application - Started LibraryManagementSystem2Application in 6.266 seconds (process running for 13.835)
+2026-07-26 13:50:52 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/library] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-26 13:50:52 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-26 13:50:52 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-07-26 13:50:52 WARN  [http-nio-8080-exec-1] c.l.l.controller.BookController - Неавторизованный доступ к /books
+2026-07-26 13:50:52 DEBUG [http-nio-8080-exec-2] c.l.l.controller.AuthController - Открыта страница входа
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.controller.AuthController - Попытка входа: username=admin
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.service.UserServiceImpl - Попытка аутентификации пользователя: admin
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.service.UserServiceImpl - Пользователь успешно аутентифицирован: ID=1, username=admin, roles=[Role(id=2, name=ADMIN)]
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-3] c.l.l.controller.AuthController - Пользователь admin успешно вошёл в систему
+2026-07-26 13:51:01 DEBUG [http-nio-8080-exec-4] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя admin: true
+2026-07-26 13:51:01 INFO  [http-nio-8080-exec-4] c.l.l.controller.AuthController - Пользователь admin открыл дашборд, isAdmin=true
+2026-07-26 13:51:04 INFO  [http-nio-8080-exec-5] c.l.l.controller.BookController - Пользователь admin просматривает список книг, search=null
+2026-07-26 13:51:04 INFO  [http-nio-8080-exec-5] c.l.l.service.BookServiceImpl - Запрос списка всех книг
+2026-07-26 13:51:04 INFO  [http-nio-8080-exec-5] c.l.l.controller.BookController - Загружено 3 книг
+2026-07-26 13:51:04 DEBUG [http-nio-8080-exec-5] c.l.l.service.UserServiceImpl - Проверка isAdmin для пользователя admin: true
+2026-07-26 14:23:31 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m10s342ms628µs400ns).
+2026-07-26 14:24:55 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-26 14:24:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-26 14:24:55 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

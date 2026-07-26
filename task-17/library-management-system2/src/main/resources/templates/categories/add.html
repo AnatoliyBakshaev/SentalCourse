@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить категорию</title>
+</head>
+<body>
+<h1>Добавить категорию</h1>
+
+<div th:if="${error}" style="color: red;" th:text="${error}"></div>
+
+<form method="post" th:action="@{/categories/add}" th:object="${category}">
+    <div>
+        <label>Название *:</label>
+        <input type="text" name="name" th:field="*{name}" required>
+    </div>
+    <div>
+        <label>Описание:</label>
+        <textarea name="description" th:field="*{description}"></textarea>
+    </div>
+    <div>
+        <label>Родительская категория:</label>
+        <select name="parentId">
+            <option value="">-- Корневая категория --</option>
+            <option th:each="cat : ${allCategories}"
+                    th:value="${cat.id}"
+                    th:text="${cat.fullPath}">
+            </option>
+        </select>
+    </div>
+    <button type="submit">Сохранить</button>
+    <a th:href="@{/categories}">Отмена</a>
+</form>
+</body>
+</html>

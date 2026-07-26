@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои аренды</title>
+</head>
+<body>
+<h1>Мои аренды</h1>
+
+<div th:if="${error}" style="color: red;" th:text="${error}"></div>
+
+<h2>Активные аренды</h2>
+<div th:if="${activeRentals.empty}">
+    <p>Нет активных аренд</p>
+</div>
+<div th:each="rental : ${activeRentals}" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+    <p><strong>Книга:</strong> <span th:text="${rental.book.title}"></span></p>
+    <p><strong>Автор:</strong> <span th:text="${rental.book.author}"></span></p>
+    <p><strong>Дата аренды:</strong> <span th:text="${rental.rentalDate}"></span></p>
+    <p><strong>Дата возврата:</strong> <span th:text="${rental.dueDate}"></span></p>
+    <p th:if="${rental.isOverdue()}" style="color: red;"><strong>ПРОСРОЧЕНО!</strong></p>
+    <a th:href="@{/rentals/return/{id}(id=${rental.id})}">Вернуть</a>
+</div>
+
+<h2>История аренд</h2>
+<div th:if="${history.empty}">
+    <p>Нет истории</p>
+</div>
+<div th:each="rental : ${history}" style="border: 1px solid #ddd; padding: 10px; margin: 5px 0;">
+    <p><strong>Книга:</strong> <span th:text="${rental.book.title}"></span></p>
+    <p><strong>Дата возврата:</strong> <span th:text="${rental.returnDate}"></span></p>
+</div>
+
+<p><a th:href="@{/dashboard}">На главную</a></p>
+</body>
+</html>

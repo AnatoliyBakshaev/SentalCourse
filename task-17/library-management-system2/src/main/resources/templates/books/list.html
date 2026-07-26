@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Список книг</title>
+</head>
+<body>
+<h1>Список книг</h1>
+
+<div th:if="${isAdmin}">
+    <a th:href="@{/books/add}">Добавить книгу</a>
+</div>
+
+<form method="get" action="/books">
+    <input type="text" name="search" th:value="${search}" placeholder="Поиск...">
+    <button type="submit"> Найти</button>
+</form>
+
+<hr>
+
+<div th:if="${#lists.isEmpty(books)}">
+    <p>Книг не найдено</p>
+</div>
+
+<div th:each="book : ${books}" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+    <h3 th:text="${book.title}"></h3>
+    <p><strong>Автор:</strong> <span th:text="${book.author}"></span></p>
+    <p><strong>Год:</strong> <span th:text="${book.publicationYear}"></span></p>
+    <p><strong>Доступно:</strong> <span th:text="${book.availableCopies}"></span></p>
+    <p><strong>Категории:</strong>
+        <span th:each="cat : ${book.categories}" th:text="${cat.name} + ' '"></span>
+    </p>
+
+    <a href="/books/view" th:href="@{/books/{id}(id=${book.id})}">Подробнее</a>
+    <a th:if="${book.availableCopies > 0}" th:href="@{/rentals/rent/{id}(id=${book.id})}">Взять</a>
+    <a th:if="${isAdmin}" th:href="@{/books/edit/{id}(id=${book.id})}"></a>
+    <a th:if="${isAdmin}" th:href="@{/books/delete/{id}(id=${book.id})}" onclick="return confirm('Удалить?')"></a>
+</div>
+
+<p><a th:href="@{/dashboard}">На главную</a></p>
+</body>
+</html>
