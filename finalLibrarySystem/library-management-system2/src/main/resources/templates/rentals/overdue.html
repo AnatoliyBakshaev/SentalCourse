@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Просроченные возвраты</title>
+</head>
+<body>
+<h1>Просроченные возвраты</h1>
+
+<div th:if="${#lists.isEmpty(overdue)}">
+    <p>Просроченных возвратов нет</p>
+</div>
+
+<div th:each="rental : ${overdue}" style="border: 1px solid red; padding: 10px; margin: 10px 0;">
+    <p><strong>Книга:</strong> <span th:text="${rental.book.title}"></span></p>
+    <p><strong>Пользователь:</strong> <span th:text="${rental.user.fullName}"></span></p>
+    <p><strong>Должны вернуть:</strong> <span th:text="${rental.dueDate}"></span></p>
+    <p style="color: red;"><strong>Просрочено!</strong></p>
+    <a th:href="@{/rentals/return/{id}(id=${rental.id})}">↩Вернуть</a>
+</div>
+
+<p><a th:href="@{/dashboard}">На главную</a></p>
+</body>
+</html>

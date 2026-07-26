@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+</head>
+<body>
+<h1>Личный кабинет</h1>
+
+<div th:if="${success}" style="color: green;" th:text="${success}"></div>
+<div th:if="${error}" style="color: red;" th:text="${error}"></div>
+
+<h2>Информация о пользователе</h2>
+<p><strong>Логин:</strong> <span th:text="${user.username}"></span></p>
+<p><strong>ФИО:</strong> <span th:text="${user.fullName}"></span></p>
+<p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+<p><strong>Телефон:</strong> <span th:text="${user.phone}"></span></p>
+<p><strong>Адрес:</strong> <span th:text="${user.address}"></span></p>
+<p><strong>Роль:</strong> <span th:text="${user.roles}"></span></p>
+
+<hr>
+
+<h3>Редактировать профиль</h3>
+<form method="post" action="/profile/update" th:object="${profileDto}">
+    <div>
+        <label>ФИО *:</label>
+        <input type="text" th:field="*{fullName}" required>
+    </div>
+    <div>
+        <label>Email *:</label>
+        <input type="email" th:field="*{email}" required>
+    </div>
+    <div>
+        <label>Телефон:</label>
+        <input type="text" th:field="*{phone}">
+    </div>
+    <div>
+        <label>Адрес:</label>
+        <input type="text" th:field="*{address}">
+    </div>
+    <button type="submit">Сохранить изменения</button>
+</form>
+
+<p><a th:href="@{/dashboard}"> На главную</a></p>
+</body>
+</html>

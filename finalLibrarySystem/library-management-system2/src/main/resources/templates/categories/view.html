@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Просмотр категории</title>
+</head>
+<body>
+<h1>Категория: <span th:text="${category.name}"></span></h1>
+
+<div style="margin: 20px 0;">
+    <p><strong>Описание:</strong> <span th:text="${category.description}"></span></p>
+    <p><strong>Путь:</strong> <span th:text="${category.fullPath}"></span></p>
+    <p><strong>Книг в категории:</strong> <span th:text="${#lists.size(category.books)}"></span></p>
+</div>
+
+<h3>Книги в этой категории</h3>
+<div th:if="${#lists.isEmpty(category.books)}">
+    <p>Нет книг в этой категории</p>
+</div>
+<ul th:if="${!#lists.isEmpty(category.books)}">
+    <li th:each="book : ${category.books}">
+        <a th:href="@{/books/{id}(id=${book.id})}" th:text="${book.title}"></a>
+    </li>
+</ul>
+
+<h3>Подкатегории</h3>
+<div th:if="${#lists.isEmpty(children)}">
+    <p>Нет подкатегорий</p>
+</div>
+<ul th:if="${!#lists.isEmpty(children)}">
+    <li th:each="child : ${children}">
+        <a th:href="@{/categories/{id}(id=${child.id})}" th:text="${child.name}"></a>
+    </li>
+</ul>
+
+<div style="margin-top: 20px;">
+    <a th:href="@{/categories}">Назад к списку категорий</a>
+    <a th:href="@{/dashboard}">На главную</a>
+</div>
+</body>
+</html>

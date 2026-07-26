@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать книгу</title>
+</head>
+<body>
+<h1>Редактировать книгу</h1>
+
+<div th:if="${error}" style="color: red;" th:text="${error}"></div>
+
+<form method="post" th:action="@{/books/edit/{id}(id=${bookDto.id})}" th:object="${bookDto}">
+    <input type="hidden" th:field="*{id}">
+
+    <div>
+        <label>Название *:</label>
+        <input type="text" th:field="*{title}" required>
+    </div>
+    <div>
+        <label>Автор *:</label>
+        <input type="text" th:field="*{author}" required>
+    </div>
+    <div>
+        <label>ISBN:</label>
+        <input type="text" th:field="*{isbn}">
+    </div>
+    <div>
+        <label>Издательство:</label>
+        <input type="text" th:field="*{publisher}">
+    </div>
+    <div>
+        <label>Год издания:</label>
+        <input type="number" th:field="*{publicationYear}">
+    </div>
+    <div>
+        <label>Описание:</label>
+        <textarea th:field="*{description}"></textarea>
+    </div>
+    <div>
+        <label>Количество копий *:</label>
+        <input type="number" th:field="*{totalCopies}" min="1" required>
+    </div>
+    <div>
+        <label>Категории:</label>
+        <select multiple th:field="*{categoryIds}">
+            <option th:each="cat : ${categories}" th:value="${cat.id}" th:text="${cat.fullPath}"></option>
+        </select>
+    </div>
+    <button type="submit">Сохранить</button>
+    <a th:href="@{/books}">Отмена</a>
+</form>
+</body>
+</html>

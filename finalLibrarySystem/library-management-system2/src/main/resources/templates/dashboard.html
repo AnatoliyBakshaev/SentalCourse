@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+<h1>Библиотечная система</h1>
+<p>Здравствуйте, <strong th:text="${user.fullName}"></strong>!</p>
+
+<div th:if="${isAdmin}" style="border: 2px solid gold; padding: 15px; background-color: #fff8e1; margin: 20px 0;">
+    <h3>Панель администратора</h3>
+    <ul>
+        <li><a th:href="@{/books}">Управление книгами</a></li>
+        <li><a th:href="@{/books/add}">Добавить книгу</a></li>
+        <li><a th:href="@{/categories}">Управление категориями</a></li>
+        <li><a th:href="@{/rentals/all}">Все аренды</a></li>
+        <li><a th:href="@{/rentals/overdue}">Просроченные возвраты</a></li>
+    </ul>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Доступные действия</h3>
+    <ul>
+        <li><a th:href="@{/books}">Список книг</a></li>
+        <li><a th:href="@{/categories}">Категории</a></li>
+        <li><a th:href="@{/rentals/my}">Мои аренды</a></li>
+        <li><a th:href="@{/profile}">Личный кабинет</a></li>
+        <li><a th:href="@{/logout}">Выйти</a></li>
+    </ul>
+</div>
+</body>
+</html>
